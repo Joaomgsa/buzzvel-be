@@ -7,7 +7,6 @@ use Illuminate\Support\Collection;
 interface PlanContract
 {
 
-
     public function listPlans(string $order = 'id', string $sort = 'desc', array $columns = ['*']): Collection;
     public function findPlanById(int $id): Plan;
 
